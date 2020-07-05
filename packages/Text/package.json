@@ -5,9 +5,10 @@
   "author": "wen911119@gmail.com",
   "license": "ISC",
   "main": "./dist/main.js",
+  "types": "./index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack index.js"
+    "build": "webpack index.tsx"
   },
   "keywords": [
     "preact"

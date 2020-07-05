@@ -1,7 +1,17 @@
-import React from "react"; 
+import React, { FC } from "react"; 
 import px2rem from "p-to-r";
+import * as CSS from 'csstype';
 
-const Text = ({
+type P2R = string | number;
+interface TextProps {
+  size?: P2R,
+  color?: string,
+  weight?: P2R,
+  style?: CSS.Properties,
+  lineHeight?: string,
+}
+
+const Text: FC<TextProps> = ({
   children,
   size = 30,
   color = "#333",
