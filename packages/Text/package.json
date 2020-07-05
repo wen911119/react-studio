@@ -1,0 +1,24 @@
+{
+  "name": "@ruiyun/react-text",
+  "version": "1.0.5",
+  "description": "",
+  "author": "wen911119@gmail.com",
+  "license": "ISC",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack index.js"
+  },
+  "keywords": [
+    "preact"
+  ],
+  "dependencies": {
+    "p-to-r": "^1.0.4"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
