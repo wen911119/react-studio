@@ -1,0 +1,25 @@
+{
+  "name": "@ruiyun/react-layout-suite",
+  "version": "1.0.5",
+  "description": "",
+  "author": "wen911119@gmail.com",
+  "license": "ISC",
+  "main": "./dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack index.js"
+  },
+  "keywords": [
+    "react"
+  ],
+  "dependencies": {
+    "p-to-r": "^1.0.4"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false
+}

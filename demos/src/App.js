@@ -1,9 +1,9 @@
 import React from 'react';
 import Text from '@ruiyun/react-text'
+import { XCenterView } from '@ruiyun/react-layout-suite'
 import logo from './logo.svg';
 import './App.css';
 
-console.log(Text, 22222)
 
 function App() {
   return (
@@ -13,6 +13,9 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to <Text color='red'>reload2</Text>.
         </p>
+        <XCenterView height='200px' width='300px' bgColor='#fff'>
+          <Text>健康健康科技</Text>
+        </XCenterView>
         <a
           className="App-link"
           href="https://reactjs.org"
