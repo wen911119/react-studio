@@ -1,5 +1,4 @@
-import { FC } from "react";
-import * as CSS from 'csstype';
+import { FC, CSSProperties } from "react";
 declare type ValignOptions = "top" | "center" | "bottom";
 declare type HalignOptions = "left" | "center" | "right" | "around" | "between";
 declare type P2R = string | number;
@@ -8,7 +7,7 @@ interface XCenterViewProps {
     width?: P2R;
     bgColor?: string;
     className?: string;
-    style?: CSS.Properties;
+    style?: CSSProperties;
 }
 interface ViewProps extends XCenterViewProps {
     vAlign?: ValignOptions;

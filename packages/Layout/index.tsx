@@ -1,6 +1,5 @@
-import React, { FC } from "react";
+import React, { FC, CSSProperties } from "react";
 import px2rem from "p-to-r";
-import * as CSS from 'csstype';
 const layout = require("./layout.css");
 
 const styleEl = document.createElement("style");
@@ -26,8 +25,8 @@ const styleParser = ({
   bgColor,
   width,
   height,
-}: StyleParserParams): CSS.Properties => {
-  let composeStyle: CSS.Properties = {};
+}: StyleParserParams): CSSProperties => {
+  let composeStyle: CSSProperties = {};
   if (padding) {
     composeStyle = Object.assign(composeStyle, {
       paddingTop: px2rem(padding[0]),
@@ -104,7 +103,7 @@ interface XCenterViewProps {
   width?: P2R;
   bgColor?: string;
   className?: string;
-  style?: CSS.Properties;
+  style?: CSSProperties;
 }
 
 interface ViewProps extends XCenterViewProps {
