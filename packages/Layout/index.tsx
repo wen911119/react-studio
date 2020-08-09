@@ -1,6 +1,7 @@
 import React, { FC, CSSProperties } from "react";
-import px2rem from "p-to-r";
 const layout = require("./layout.css");
+
+const px2rem = (v: P2R) => (typeof v === "number" ? `${v}px` : v);
 
 const styleEl = document.createElement("style");
 let injectedStyle = "";
@@ -111,6 +112,7 @@ interface ViewProps extends XCenterViewProps {
   hAlign?: HalignOptions;
   padding?: P2R[];
   margin?: P2R[];
+  onClick?: (v: any) => any;
 }
 interface SlotViewProps extends ViewProps {
   slot?: P2R | FC;
@@ -212,21 +214,8 @@ export const SlotRowView: FC<SlotViewProps> = ({
 }) => {
   let allChildren = children;
   let _className = className;
-  if (children && React.Children.toArray(children).length && slot) {
-    if (typeof slot === "string" || legacy) {
-      // typeof string 是为了支持pc上直接传15px这种
-      // legacy模式保留旧的插div占空间的模式
-      allChildren = alternateInsert(
-        children,
-        <SpaceHolder width={slot as P2R} />
-      );
-    } else if (typeof slot === "number") {
-      _className = className ? className + " " : "";
-      _className = _className + `child-mgr-${slot} ${layout.slotrowview}`;
-    } else {
-      allChildren = alternateInsert(children, slot);
-    }
-  }
+  _className = className ? className + " " : "";
+  _className = _className + `child-mgr-${slot} ${layout.slotrowview}`;
   return (
     <RowView {...otherProps} className={_className}>
       {allChildren}
@@ -243,20 +232,8 @@ export const SlotColumnView: FC<SlotViewProps> = ({
 }) => {
   let allChildren = children;
   let _className = className;
-  if (children && React.Children.toArray(children).length && slot) {
-    if (typeof slot === "string" || legacy) {
-      // 保留旧的插div占空间的模式
-      allChildren = alternateInsert(
-        children,
-        <SpaceHolder height={slot as P2R} />
-      );
-    } else if (typeof slot === "number") {
-      _className = className ? className + " " : "";
-      _className = _className + `child-mgb-${slot} ${layout.slotcolumnview}`;
-    } else {
-      allChildren = alternateInsert(children, slot);
-    }
-  }
+  _className = className ? className + " " : "";
+  _className = _className + `child-mgb-${slot} ${layout.slotcolumnview}`;
   return (
     <ColumnView {...otherProps} className={_className}>
       {allChildren}
