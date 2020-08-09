@@ -1,9 +1,9 @@
 {
   "name": "demos",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "private": true,
   "dependencies": {
-    "@ruiyun/react-layout-suite": "^1.0.8",
+    "@ruiyun/react-layout-suite": "^1.1.0",
     "@ruiyun/react-text": "^1.0.8",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
