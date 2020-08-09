@@ -1299,12 +1299,19 @@
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
   integrity sha512-shAmDyaQC4H92APFoIaVDHCx5bStIocgvbwQyxPRrbUY20V1EYTbSDchWbuwlMG3V17cprZhA6+78JfB+3DTPw==
 
-"@ruiyun/react-text@^1.0.0":
-  version "1.0.4"
-  resolved "http://bnpm.byted.org/@ruiyun/react-text/download/@ruiyun/react-text-1.0.4.tgz#8e89f36bf514634e8b399e59d558c87ea40169c1"
-  integrity sha1-jonza/UUY06LOZ5Z1VjIfqQBacE=
+"@ruiyun/react-layout-suite@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@ruiyun/react-layout-suite/-/react-layout-suite-1.1.0.tgz#38292b8372d18e676fec94b0dc794bc37e32af88"
+  integrity sha512-hValBWyA47MNAeBdEWLqtXzxon9xN3jAslQ8mMXS1pI8uv7D3R29804Ejq5hZ6ooC/IagX5kwK162TG63Q1MZA==
   dependencies:
-    p-to-r "^1.0.0"
+    p-to-r "^1.0.4"
+
+"@ruiyun/react-text@^1.0.8":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@ruiyun/react-text/-/react-text-1.0.8.tgz#ff09066789b7d71889762eaf01e26c99ff7acf5b"
+  integrity sha512-fSJ0vMOZi8x4A9OTjy9crAZ5qrFWt7G1iCKPq0FTi0fvHvqnqeGwtPqsM5rhI3mvWq+lYb9y3Wn/bq5sZKiOwg==
+  dependencies:
+    p-to-r "^1.0.4"
 
 "@sheerun/mutationobserver-shim@^0.3.2":
   version "0.3.3"
@@ -2439,9 +2446,9 @@ bluebird@^3.5.5:
   integrity sha512-XpNj6GDQzdfW+r2Wnn7xiSAd7TM3jzkxGXBGTtWKuSXv1xUV+azxAm8jdWZN06QTQk+2N2XB9jRDkvbmQmcRtg==
 
 bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
-  version "4.11.8"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
-  integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+  version "4.11.9"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.9.tgz#26d556829458f9d1e81fc48952493d0ba3507828"
+  integrity sha512-E6QoYqCKZfgatHTdHzs1RRKP7ip4vvm+EyRUeE2RF0NblwVvb0p6jSVeNTOFxPn26QXN2o6SMfNxKp6kU8zQaw==
 
 body-parser@1.19.0:
   version "1.19.0"
@@ -3860,9 +3867,9 @@ electron-to-chromium@^1.3.378:
   integrity sha512-NK9DBBYEBb5f9D7zXI0hiE941gq3wkBeQmXs1ingigA/jnTg5mhwY2Z5egwA+ZI8OLGKCx0h1Cl8/xeuIBuLlg==
 
 elliptic@^6.0.0:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.2.tgz#05c5678d7173c049d8ca433552224a495d0e3762"
-  integrity sha512-f4x70okzZbIQl/NSRLkI/+tteV/9WqL98zx+SQ69KbXxmVrmjwsNUPn/gYJJ0sHvEak24cZgHIPegRePAtA/xw==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.3.tgz#cb59eb2efdaf73a0bd78ccd7015a62ad6e0f93d6"
+  integrity sha512-IMqzv5wNQf+E6aHeIqATs0tOLeOTwj1QKbRcS3jBbYkl5oLAserA8yJTT7/VyHUYG91PRmPyeQDObKLPpeS4dw==
   dependencies:
     bn.js "^4.4.0"
     brorand "^1.0.1"
@@ -7361,10 +7368,10 @@ p-retry@^3.0.1:
   dependencies:
     retry "^0.12.0"
 
-p-to-r@^1.0.0:
+p-to-r@^1.0.4:
   version "1.0.4"
-  resolved "http://bnpm.byted.org/p-to-r/download/p-to-r-1.0.4.tgz#1856b07f82c73b5cefcb4413810e687a556a766e"
-  integrity sha1-GFawf4LHO1zvy0QTgQ5oelVqdm4=
+  resolved "https://registry.yarnpkg.com/p-to-r/-/p-to-r-1.0.4.tgz#1856b07f82c73b5cefcb4413810e687a556a766e"
+  integrity sha512-kkfoAJ9adof+s5oJdF+xGrfubD0BYWyxQkEZp/1SY5mX8vDmMNET+pug90/hk5XHp3rRHTApGHZXMTYoT8vcbA==
 
 p-try@^1.0.0:
   version "1.0.0"
