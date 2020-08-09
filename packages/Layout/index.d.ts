@@ -14,6 +14,7 @@ interface ViewProps extends XCenterViewProps {
     hAlign?: HalignOptions;
     padding?: P2R[];
     margin?: P2R[];
+    onClick?: (v: any) => any;
 }
 interface SlotViewProps extends ViewProps {
     slot?: P2R | FC;
